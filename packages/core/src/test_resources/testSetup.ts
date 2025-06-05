@@ -1,11 +1,10 @@
-import dotenv from "dotenv";
-import path from "path";
+import dotenv from 'dotenv';
 
-// Load test environment variables
-const envPath = path.resolve(__dirname, "../../.env.test");
-console.log("Current directory:", __dirname);
-console.log("Trying to load env from:", envPath);
-const result = dotenv.config({ path: envPath });
+const result = dotenv.config({ path: '../../.env.test' });
 if (result.error) {
-    console.error("Error loading .env.test:", result.error);
+  console.error('Error loading .env.test. Loading .env instead');
+  const result2 = dotenv.config({ path: '../../.env' });
+  if (result2.error) {
+    console.error('Error loading .env:', result2.error);
+  }
 }

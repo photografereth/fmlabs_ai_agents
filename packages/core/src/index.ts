@@ -1,26 +1,21 @@
-import "./config.ts"; // Add this line first
+// Export everything from types
+export * from './types';
 
-export * from "./actions.ts";
-export * from "./context.ts";
-export * from "./database.ts";
-export * from "./defaultCharacter.ts";
-export * from "./embedding.ts";
-export * from "./evaluators.ts";
-export * from "./generation.ts";
-export * from "./goals.ts";
-export * from "./memory.ts";
-export * from "./messages.ts";
-export * from "./models.ts";
-export * from "./posts.ts";
-export * from "./providers.ts";
-export * from "./relationships.ts";
-export * from "./runtime.ts";
-export * from "./settings.ts";
-export * from "./types.ts";
-export * from "./logger.ts";
-export * from "./parsing.ts";
-export * from "./uuid.ts";
-export * from "./environment.ts";
-export * from "./cache.ts";
-export { default as knowledge } from "./knowledge.ts";
-export * from "./utils.ts";
+// Then all other exports
+export * from './actions';
+export * from './database';
+export * from './entities';
+export * from './logger';
+export * from './prompts';
+export * from './roles';
+export * from './runtime';
+// search doesn't need to be exported
+export * from './settings';
+export * from './utils';
+export * from './services';
+export * from './specs';
+
+// Export instrumentation types and service
+export * from './instrumentation/types';
+export * from './instrumentation/service';
+export * from './sentry/instrument';

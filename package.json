@@ -1,73 +1,78 @@
 {
-    "name": "eliza",
-    "scripts": {
-        "preinstall": "npx only-allow pnpm",
-        "build": "turbo run build --filter=!eliza-docs",
-        "build-docker": "turbo run build",
-        "cleanstart": "if [ -f agent/data/db.sqlite ]; then rm agent/data/db.sqlite; fi && pnpm --filter \"@elizaos/agent\" start --isRoot",
-        "cleanstart:debug": "if [ -f agent/data/db.sqlite ]; then rm agent/data/db.sqlite; fi && cross-env NODE_ENV=development VERBOSE=true DEBUG=eliza:* pnpm --filter \"@elizaos/agent\" start --isRoot",
-        "start": "pnpm --filter \"@elizaos/agent\" start --isRoot",
-        "start:client": "pnpm --dir client dev",
-        "start:debug": "cross-env NODE_ENV=development VERBOSE=true DEBUG=eliza:* pnpm --filter \"@elizaos/agent\" start --isRoot",
-        "dev": "bash ./scripts/dev.sh",
-        "lint": "bash ./scripts/lint.sh",
-        "prettier-check": "npx prettier --check --cache .",
-        "prettier": "npx prettier --write --cache .",
-        "release": "pnpm build && pnpm prettier && npx lerna publish --no-private --force-publish",
-        "clean": "bash ./scripts/clean.sh",
-        "docker:build": "bash ./scripts/docker.sh build",
-        "docker:run": "bash ./scripts/docker.sh run",
-        "docker:bash": "bash ./scripts/docker.sh bash",
-        "docker:start": "bash ./scripts/docker.sh start",
-        "docker": "pnpm docker:build && pnpm docker:run && pnpm docker:bash",
-        "test": "bash ./scripts/test.sh",
-        "smokeTests": "bash ./scripts/smokeTests.sh",
-        "integrationTests": "bash ./scripts/integrationTests.sh"
-    },
-    "devDependencies": {
-        "@commitlint/cli": "18.6.1",
-        "@commitlint/config-conventional": "18.6.3",
-        "@typescript-eslint/eslint-plugin": "8.16.0",
-        "@typescript-eslint/parser": "8.16.0",
-        "@vitest/eslint-plugin": "1.1.13",
-        "concurrently": "9.1.0",
-        "cross-env": "7.0.3",
-        "eslint": "9.16.0",
-        "eslint-config-prettier": "9.1.0",
-        "husky": "9.1.7",
-        "lerna": "8.1.5",
-        "only-allow": "1.2.1",
-        "prettier": "3.4.1",
-        "turbo": "2.3.3",
-        "typedoc": "0.26.11",
-        "typescript": "5.6.3",
-        "vite": "5.4.11",
-        "vitest": "2.1.5",
-        "viem": "2.21.58"
-    },
-    "pnpm": {
-        "overrides": {
-            "onnxruntime-node": "1.20.1"
-        }
-    },
-    "engines": {
-        "node": "23.3.0"
-    },
-    "dependencies": {
-        "@0glabs/0g-ts-sdk": "0.2.1",
-        "@coinbase/coinbase-sdk": "0.10.0",
-        "@deepgram/sdk": "^3.9.0",
-        "@vitest/eslint-plugin": "1.0.1",
-        "amqplib": "0.10.5",
-        "csv-parse": "5.6.0",
-        "ollama-ai-provider": "0.16.1",
-        "optional": "0.1.4",
-        "pnpm": "9.14.4",
-        "sharp": "0.33.5",
-        "tslog": "4.9.3"
-    },
-    "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee",
-    "workspaces": [
-        "packages/*"
-    ]
+  "name": "eliza",
+  "version": "1.0.0",
+  "module": "index.ts",
+  "type": "module",
+  "engines": {
+    "node": "23.3.0"
+  },
+  "scripts": {
+    "start": "turbo run start --filter=./packages/cli --log-prefix=none --force",
+    "start:debug": "cross-env NODE_NO_WARNINGS=1 LOG_LEVEL=debug elizaos start",
+    "start:app": "turbo run start --filter=./packages/app",
+    "dev": "turbo run start --filter=./packages/cli --no-cache --force",
+    "build:docs": "turbo run build --filter=@elizaos/docs",
+    "build": "turbo run build --filter=!@elizaos/docs --force",
+    "build:client": "turbo run build --filter=@elizaos/client",
+    "format": "turbo run format --filter=./packages/*",
+    "format:check": "turbo run format:check --filter=./packages/*",
+    "clean": "rm -rf dist .turbo node_modules .turbo-tsconfig.json tsconfig.tsbuildinfo bun.lock* .eliza .elizadb && turbo run clean --filter=./packages/* && bun install && bun run build",
+    "build:cli": "turbo run build --filter=@elizaos/cli --no-cache",
+    "build:core": "turbo run build --filter=@elizaos/core --no-cache",
+    "lint": "turbo run lint --filter=./packages/* && prettier --write . && prettier --check .",
+    "pre-commit": "bun run scripts/pre-commit-lint.js",
+    "release": "bun run build && bun lint && lerna publish --no-private --force-publish && bun lint",
+    "release:alpha": "lerna publish prerelease --preid alpha --dist-tag alpha --no-private --force-publish --loglevel verbose",
+    "migrate": "turbo run migrate --filter=./packages/plugin-sql --force",
+    "migrate:generate": "turbo run migrate:generate --filter=./packages/plugin-sql",
+    "docker:build": "bash ./scripts/docker.sh build",
+    "docker:run": "bash ./scripts/docker.sh run",
+    "docker:bash": "bash ./scripts/docker.sh bash",
+    "docker:start": "bash ./scripts/docker.sh start",
+    "docker": "bun docker:build && bun docker:run && bun docker:bash",
+    "test": "turbo run test --concurrency 20 --filter=!./packages/plugin-starter --filter=!./packages/project-starter --filter=!./packages/docs --filter=!@elizaos/plugin-sql",
+    "test:client": "turbo run test --filter=./packages/client",
+    "test:core": "turbo run test --filter=./packages/core",
+    "test:app": "turbo run test --concurrency 20 --filter=./packages/app",
+    "prepare": "husky"
+  },
+  "packageManager": "bun@1.2.15",
+  "workspaces": [
+    "packages/*",
+    "plugin-specification/*"
+  ],
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^22.15.3",
+    "@types/uuid": "^10.0.0",
+    "bun": "^1.2.15",
+    "husky": "^9.1.7",
+    "lerna": "8.1.4",
+    "tsup": "8.5.0",
+    "turbo": "^2.5.4",
+    "typescript": "^5.8.2",
+    "vitest": "3.1.4"
+  },
+  "resolutions": {
+    "@nrwl/devkit": "19.8.4",
+    "@nrwl/tao": "19.8.4",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "@types/react": "19.1.5",
+    "typedoc-plugin-markdown": "4.2.10",
+    "typedoc": "0.27.9"
+  },
+  "trustedDependencies": [
+    "@swc/core",
+    "bigint-buffer",
+    "bufferutil",
+    "bun",
+    "canvas",
+    "esbuild",
+    "husky",
+    "node-llama-cpp",
+    "protobufjs",
+    "utf-8-validate"
+  ],
+  "dependencies": {}
 }

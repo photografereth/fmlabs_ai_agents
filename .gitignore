@@ -4,23 +4,16 @@ node_modules
 .env
 .env.production
 .env.local
+.env.bak
 .env_main
-concatenated-output.ts
-embedding-cache.json
-packages/plugin-buttplug/intiface-engine
 
 .idea
+.zed
 .DS_Store
 
 dist/
 # Allow models directory but ignore model files
-models/*.gguf
-
-cookies.json
-
-db.sqlite
-searches/
-tweets/
+db/
 
 *.gguf
 *.onnx
@@ -30,28 +23,134 @@ tweets/
 logs/
 
 test-report.json
-content_cache/
 test_data/
 tokencache/
-tweetcache/
-twitter_cookies.json
-timeline_cache.json
 
-*.sqlite
+# Character configurations
+characters/**/secrets.json
+characters/**/*.env
+characters/**/*.key
+characters/**/private/
 
-characters/
-
-packages/core/src/providers/cache
-packages/core/src/providers/cache/*
 cache/*
-packages/plugin-coinbase/src/plugins/transactions.csv
+models/*
 
 tsup.config.bundled_*.mjs
 
 .turbo
 .cursorrules
 
+instructions.md
+wallet_data.txt
+
 coverage
 .eslintcache
 
-agent/content
+eliza.manifest
+eliza.manifest.sgx
+eliza.sig
+
+# Configuration to exclude the extra and local_docs directories
+extra
+**/dist/**
+
+packages/docs/api/*
+
+**/dist/**
+
+**/.docusaurus/**
+**/docs/build/**
+
+lerna-debug.log
+
+tsdoc_cache/
+tsdoc_comments/
+
+**/elizadb/**
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Org-mode
+.org-id-locations
+*_archive
+
+# flymake-mode
+*_flymake.*
+
+# eshell files
+/eshell/history
+/eshell/lastdir
+
+# elpa packages
+/elpa/
+
+# reftex files
+*.rel
+
+# AUCTeX auto folder
+/auto/
+
+# cask packages
+.cask/
+dist/
+
+# Flycheck
+flycheck_*.el
+
+# server auth directory
+/server/
+
+# projectiles files
+.projectile
+
+# directory configuration
+.dir-locals.el
+
+# network security
+/network-security.data
+
+packages/autodoc/text_objects/*
+/env
+**elizadb**
+**.eliza**
+
+# UI Test related files
+screenshots/
+packages/client/ui-tests/screenshots/
+**/ui-tests/screenshots/**
+test-results/
+**/test-results*/
+playwright-report/
+**/playwright-report/
+**/test-results/
+**/playwright/.cache/
+.playwright/
+**/tests/*.log
+**/tests/artifacts/
+**/tests/logs/
+**/tests/temp/
+**/test-report*.json
+**/.nyc_output/
+
+# Archive files
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# Temporary files
+*.tmp
+*.temp
+temp/
+tmp/
+
+
+*.cursor*

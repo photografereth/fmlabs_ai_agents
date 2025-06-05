@@ -1,40 +1,46 @@
 {
-    "$schema": "https://turbo.build/schema.json",
-    "tasks": {
-        "check-types": {
-            "dependsOn": ["build"]
-        },
-        "@elizaos/agent#check-types": {
-            "dependsOn": [
-                "@elizaos/plugin-solana#build",
-                "@elizaos/plugin-direct#build"
-            ]
-        },
-        "build": {
-            "outputs": ["dist/**"],
-            "dependsOn": ["^@elizaos/core#build"]
-        },
-        "@elizaos/plugin-solana#build": {
-            "outputs": ["dist/**"],
-            "dependsOn": [
-                "@elizaos/plugin-trustdb#build",
-                "@elizaos/plugin-tee#build"
-            ]
-        },
-        "@elizaos/plugin-nft-generation#build": {
-            "outputs": ["dist/**"],
-            "dependsOn": ["@elizaos/plugin-node#build"]
-        },
-        "@elizaos/plugin-evm#build": {
-            "outputs": ["dist/**"],
-            "dependsOn": ["@elizaos/plugin-tee#build"]
-        },
-        "eliza-docs#build": {
-            "outputs": ["build/**"]
-        },
-        "dev": {
-            "persistent": true,
-            "cache": false
-        }
+  "$schema": "https://turborepo.org/schema.json",
+  "tasks": {
+    "build": {
+      "dependsOn": ["^build"],
+      "env": ["LOG_LEVEL"],
+      "outputs": ["dist/**"]
+    },
+    "lint": {
+      "outputs": [".eslintcache"]
+    },
+    "format": {
+      "outputs": []
+    },
+    "format:check": {
+      "outputs": []
+    },
+    "start": {
+      "dependsOn": ["@elizaos/core#build"],
+      "env": ["LOG_LEVEL"],
+      "persistent": true,
+      "cache": false
+    },
+    "dev": {
+      "dependsOn": ["@elizaos/core#build"],
+      "persistent": true,
+      "cache": false
+    },
+    "test": {
+      "dependsOn": ["^build"],
+      "outputs": ["coverage/**"],
+      "inputs": ["src/**/*.ts", "src/**/*.js", "__tests__/**/*", "*.test.*"]
+    },
+    "migrate": {
+      "dependsOn": ["@elizaos/core#build"],
+      "cache": false
+    },
+    "migrate:generate": {
+      "dependsOn": ["@elizaos/core#build"],
+      "cache": false
+    },
+    "clean": {
+      "cache": false
     }
+  }
 }
