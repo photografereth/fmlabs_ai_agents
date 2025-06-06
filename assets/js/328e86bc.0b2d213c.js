@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_elizaos_docs=self.webpackChunk_elizaos_docs||[]).push([[54266],{80792:s=>{s.exports=JSON.parse('{"blogBasePath":"/news","blogTitle":"AI News","authorsListPath":"/news/authors"}')}}]);

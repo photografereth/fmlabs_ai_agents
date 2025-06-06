@@ -1,0 +1,698 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-api docs-version-current docs-doc-page docs-doc-id-namespaces/v1/type-aliases/Character" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.7.0">
+<title data-rh="true">Character | eliza</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://eliza.how/api/namespaces/v1/type-aliases/Character"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-api-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-api-current"><meta data-rh="true" property="og:title" content="Character | eliza"><meta data-rh="true" name="description" content="@elizaos/core v1.0.2 / v1 / Character"><meta data-rh="true" property="og:description" content="@elizaos/core v1.0.2 / v1 / Character"><link data-rh="true" rel="icon" href="/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://eliza.how/api/namespaces/v1/type-aliases/Character"><link data-rh="true" rel="alternate" href="https://eliza.how/api/namespaces/v1/type-aliases/Character" hreflang="en"><link data-rh="true" rel="alternate" href="https://eliza.how/api/namespaces/v1/type-aliases/Character" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="ElizaOS Updates RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="ElizaOS Updates Atom Feed">
+<link rel="alternate" type="application/json" href="/blog/feed.json" title="ElizaOS Updates JSON Feed"><link rel="stylesheet" href="/assets/css/styles.d056764a.css">
+<script src="/assets/js/runtime~main.587cfe7a.js" defer="defer"></script>
+<script src="/assets/js/main.34320277.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();null!==e?t(e):window.matchMedia("(prefers-color-scheme: dark)").matches?t("dark"):(window.matchMedia("(prefers-color-scheme: light)").matches,t("light"))}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}(),document.documentElement.setAttribute("data-announcement-bar-initially-dismissed",function(){try{return"true"===localStorage.getItem("docusaurus.announcement.dismiss")}catch(t){}return!1}())</script><div id="__docusaurus"><link rel="preload" as="image" href="/img/icon.png"><div role="region" aria-label="Skip to main content"><a class="skipToContent_G6ar" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><div class="announcementBar_ncOr" style="background-color:var(--ifm-color-warning-light);color:#1f1f1f" role="banner"><div class="announcementBarPlaceholder_ajMw"></div><div class="content_L1uV announcementBarContent__57G">🔥 Interact with our full documentation using your favorite LLM! <a href="/llms-full.txt" target="_blank" rel="noopener noreferrer">Copy <code>llms-full.txt</code></a> to get started. ✨</div><button type="button" aria-label="Close" class="clean-btn close closeButton_rfix announcementBarClose_c9u4"><svg viewBox="0 0 15 15" width="14" height="14"><g stroke="currentColor" stroke-width="3.1"><path d="M.75.75l13.5 13.5M14.25.75L.75 14.25"></path></g></svg></button></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/icon.png" alt="Eliza Logo" class="themedComponent_DHUr themedComponent--light_DIHH"><img src="/img/icon.png" alt="Eliza Logo" class="themedComponent_DHUr themedComponent--dark_Bv2M"></div><b class="navbar__title text--truncate">elizaOS</b></a><a class="navbar__item navbar__link" href="/docs/intro">Documentation</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/api">API</a><div class="navbar__item dropdown dropdown--hoverable"><a class="navbar__link" aria-haspopup="true" aria-expanded="false" role="button" href="/packages">Packages</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/packages?tags=adapter">Adapters</a></li><li><a class="dropdown__link" href="/packages?tags=client">Clients</a></li><li><a class="dropdown__link" href="/packages?tags=plugin">Plugins</a></li></ul></div><div class="navbar__item dropdown dropdown--hoverable"><a class="navbar__link" aria-haspopup="true" aria-expanded="false" role="button" href="/community">Community</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/partners">Partners</a></li><li><a href="https://calendar.google.com/calendar/embed?src=c_ed31cea342d3e2236f549161e6446c3e407e5625ee7a355c0153befc7a602e7f%40group.calendar.google.com&amp;ctz=America%2FToronto" target="_blank" rel="noopener noreferrer" class="dropdown__link">Calendar</a></li><li><a class="dropdown__link" href="/community/videos">Video Gallery</a></li></ul></div><div class="navbar__item dropdown dropdown--hoverable"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link">Blog</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/blog">Main Blog</a></li><li><a href="https://elizaos.github.io/" target="_blank" rel="noopener noreferrer" class="dropdown__link">GitHub Activity<svg width="12" height="12" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_awgD"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div><div class="navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a class="navbar__link" aria-haspopup="true" aria-expanded="false" role="button" href="/docs">1.0.0</a><ul class="dropdown__menu"><li><a class="dropdown__link" href="/docs">1.0.0</a></li><li><a class="dropdown__link" href="/docs/0.25.9/intro">0.25.9</a></li></ul></div><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link header-rss-link" aria-label="RSS Feed" href="/blog"></a><ul class="dropdown__menu"><li><a href="/blog/rss.xml" class="dropdown__link" target="_blank">RSS (XML)</a></li><li><a href="/blog/atom.xml" class="dropdown__link" target="_blank">Atom</a></li><li><a href="/blog/feed.json" class="dropdown__link" target="_blank">JSON Feed</a></li></ul></div><a href="https://github.com/elizaos/eliza" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link header-github-link" aria-label="GitHub repository"></a><div class="toggle_OLSw colorModeToggle_Hg9V"><button class="clean-btn toggleButton_wYmb toggleButtonDisabled_vaDU" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_Sxwe"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_Yem1"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_bmvg"><div class="navbar__search"><span aria-label="expand searchbar" role="button" class="search-icon" tabindex="0"></span><input id="search_input_react" type="search" placeholder="Loading..." aria-label="Search" class="navbar__search-input search-bar" disabled=""></div></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_UyTV"><div class="docsWrapper_XLvK"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_z1FD" type="button"></button><div class="docRoot_HciC"><aside class="theme-doc-sidebar-container docSidebarContainer_e5ai"><div class="sidebarViewport_N8x0"><div class="sidebar_vJCc"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_qiME menuWithAnnouncementBar_hRfJ"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/api/classes/DatabaseAdapter">classes</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/api/enumerations/CacheKeyPrefix">enumerations</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/api/functions/addHeader">functions</a></div></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/api">@elizaos/core v1.0.2</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/api/interfaces/Action">interfaces</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" href="/api/namespaces/v1">namespaces</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" tabindex="0" href="/api/namespaces/v1">index</a><button aria-label="Collapse sidebar category &#x27;index&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/api/namespaces/v1/enumerations/GoalStatus">enumerations</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/api/namespaces/v1/functions/asUUID">functions</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" tabindex="0" href="/api/namespaces/v1/interfaces/Account">interfaces</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-3 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" role="button" aria-expanded="true" tabindex="0" href="/api/namespaces/v1/type-aliases/ActionExample">type-aliases</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/api/namespaces/v1/type-aliases/ActionExample">ActionExample</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/api/namespaces/v1/type-aliases/Adapter">Adapter</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/api/namespaces/v1/type-aliases/Character">Character</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/api/namespaces/v1/type-aliases/Client">Client</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/api/namespaces/v1/type-aliases/ClientInstance">ClientInstance</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/api/namespaces/v1/type-aliases/EmbeddingModelSettings">EmbeddingModelSettings</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/api/namespaces/v1/type-aliases/Handler">Handler</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/api/namespaces/v1/type-aliases/HandlerCallback">HandlerCallback</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/api/namespaces/v1/type-aliases/ImageModelSettings">ImageModelSettings</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/api/namespaces/v1/type-aliases/Media">Media</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/api/namespaces/v1/type-aliases/Model">Model</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/api/namespaces/v1/type-aliases/ModelSettings">ModelSettings</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/api/namespaces/v1/type-aliases/Models">Models</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/api/namespaces/v1/type-aliases/Plugin">Plugin</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/api/namespaces/v1/type-aliases/Provider">Provider</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/api/namespaces/v1/type-aliases/State">State</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/api/namespaces/v1/type-aliases/TemplateType">TemplateType</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/api/namespaces/v1/type-aliases/UUID">UUID</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-4 menu__list-item"><a class="menu__link" tabindex="0" href="/api/namespaces/v1/type-aliases/Validator">Validator</a></li></ul></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" tabindex="0" href="/api/namespaces/v2">index</a><button aria-label="Expand sidebar category &#x27;index&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/api/type-aliases/ComponentData">type-aliases</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" role="button" aria-expanded="false" href="/api/variables/ModelType">variables</a></div></li></ul></nav><button type="button" title="Collapse sidebar" aria-label="Collapse sidebar" class="button button--secondary button--outline collapseSidebarButton_Ftvb"><svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_c4WT"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></div></aside><main class="docMainContainer_namt"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_YAwJ"><div class="docItemContainer_Rv5Z"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_zCmv" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_JFrk"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">namespaces</span><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/api/namespaces/v1"><span itemprop="name">index</span></a><meta itemprop="position" content="2"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">type-aliases</span><meta itemprop="position" content="3"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Character</span><meta itemprop="position" content="4"></li></ul></nav><div class="tocCollapsible_O_Qc theme-doc-toc-mobile tocMobile_tjDr"><button type="button" class="clean-btn tocCollapsibleButton_htYj">On this page</button></div><div class="docItemActions_Nji8"></div><div class="theme-doc-markdown markdown"><p><a href="/api">@elizaos/core v1.0.2</a> / <a href="/api/namespaces/v1">v1</a> / Character</p>
+<header><h1>Type Alias: Character</h1></header>
+<blockquote>
+<p><strong>Character</strong>: <code>object</code></p>
+</blockquote>
+<p>Configuration for an agent character</p>
+<h2 class="anchor anchorWithStickyNavbar_fF9Z" id="type-declaration">Type declaration<a href="#type-declaration" class="hash-link" aria-label="Direct link to Type declaration" title="Direct link to Type declaration">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="id">id?<a href="#id" class="hash-link" aria-label="Direct link to id?" title="Direct link to id?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>id</strong>: <a href="/api/namespaces/v1/type-aliases/UUID"><code>UUID</code></a></p>
+</blockquote>
+<p>Optional unique identifier</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="name">name<a href="#name" class="hash-link" aria-label="Direct link to name" title="Direct link to name">​</a></h3>
+<blockquote>
+<p><strong>name</strong>: <code>string</code></p>
+</blockquote>
+<p>Character name</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="username">username?<a href="#username" class="hash-link" aria-label="Direct link to username?" title="Direct link to username?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>username</strong>: <code>string</code></p>
+</blockquote>
+<p>Optional username</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="email">email?<a href="#email" class="hash-link" aria-label="Direct link to email?" title="Direct link to email?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>email</strong>: <code>string</code></p>
+</blockquote>
+<p>Optional email</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="system">system?<a href="#system" class="hash-link" aria-label="Direct link to system?" title="Direct link to system?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>system</strong>: <code>string</code></p>
+</blockquote>
+<p>Optional system prompt</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="modelprovider">modelProvider<a href="#modelprovider" class="hash-link" aria-label="Direct link to modelProvider" title="Direct link to modelProvider">​</a></h3>
+<blockquote>
+<p><strong>modelProvider</strong>: <a href="/api/namespaces/v1/enumerations/ModelProviderName"><code>ModelProviderName</code></a></p>
+</blockquote>
+<p>Model provider to use</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="imagemodelprovider">imageModelProvider?<a href="#imagemodelprovider" class="hash-link" aria-label="Direct link to imageModelProvider?" title="Direct link to imageModelProvider?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>imageModelProvider</strong>: <a href="/api/namespaces/v1/enumerations/ModelProviderName"><code>ModelProviderName</code></a></p>
+</blockquote>
+<p>Image model provider to use, if different from modelProvider</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="imagevisionmodelprovider">imageVisionModelProvider?<a href="#imagevisionmodelprovider" class="hash-link" aria-label="Direct link to imageVisionModelProvider?" title="Direct link to imageVisionModelProvider?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>imageVisionModelProvider</strong>: <a href="/api/namespaces/v1/enumerations/ModelProviderName"><code>ModelProviderName</code></a></p>
+</blockquote>
+<p>Image Vision model provider to use, if different from modelProvider</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="modelendpointoverride">modelEndpointOverride?<a href="#modelendpointoverride" class="hash-link" aria-label="Direct link to modelEndpointOverride?" title="Direct link to modelEndpointOverride?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>modelEndpointOverride</strong>: <code>string</code></p>
+</blockquote>
+<p>Optional model endpoint override</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templates">templates?<a href="#templates" class="hash-link" aria-label="Direct link to templates?" title="Direct link to templates?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>templates</strong>: <code>object</code></p>
+</blockquote>
+<p>Optional prompt templates</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesgoalstemplate">templates.goalsTemplate?<a href="#templatesgoalstemplate" class="hash-link" aria-label="Direct link to templates.goalsTemplate?" title="Direct link to templates.goalsTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>goalsTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesfactstemplate">templates.factsTemplate?<a href="#templatesfactstemplate" class="hash-link" aria-label="Direct link to templates.factsTemplate?" title="Direct link to templates.factsTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>factsTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesmessagehandlertemplate">templates.messageHandlerTemplate?<a href="#templatesmessagehandlertemplate" class="hash-link" aria-label="Direct link to templates.messageHandlerTemplate?" title="Direct link to templates.messageHandlerTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>messageHandlerTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesshouldrespondtemplate">templates.shouldRespondTemplate?<a href="#templatesshouldrespondtemplate" class="hash-link" aria-label="Direct link to templates.shouldRespondTemplate?" title="Direct link to templates.shouldRespondTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>shouldRespondTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatescontinuemessagehandlertemplate">templates.continueMessageHandlerTemplate?<a href="#templatescontinuemessagehandlertemplate" class="hash-link" aria-label="Direct link to templates.continueMessageHandlerTemplate?" title="Direct link to templates.continueMessageHandlerTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>continueMessageHandlerTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesevaluationtemplate">templates.evaluationTemplate?<a href="#templatesevaluationtemplate" class="hash-link" aria-label="Direct link to templates.evaluationTemplate?" title="Direct link to templates.evaluationTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>evaluationTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatestwittersearchtemplate">templates.twitterSearchTemplate?<a href="#templatestwittersearchtemplate" class="hash-link" aria-label="Direct link to templates.twitterSearchTemplate?" title="Direct link to templates.twitterSearchTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>twitterSearchTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatestwitteractiontemplate">templates.twitterActionTemplate?<a href="#templatestwitteractiontemplate" class="hash-link" aria-label="Direct link to templates.twitterActionTemplate?" title="Direct link to templates.twitterActionTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>twitterActionTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatestwitterposttemplate">templates.twitterPostTemplate?<a href="#templatestwitterposttemplate" class="hash-link" aria-label="Direct link to templates.twitterPostTemplate?" title="Direct link to templates.twitterPostTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>twitterPostTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatestwittermessagehandlertemplate">templates.twitterMessageHandlerTemplate?<a href="#templatestwittermessagehandlertemplate" class="hash-link" aria-label="Direct link to templates.twitterMessageHandlerTemplate?" title="Direct link to templates.twitterMessageHandlerTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>twitterMessageHandlerTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatestwittershouldrespondtemplate">templates.twitterShouldRespondTemplate?<a href="#templatestwittershouldrespondtemplate" class="hash-link" aria-label="Direct link to templates.twitterShouldRespondTemplate?" title="Direct link to templates.twitterShouldRespondTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>twitterShouldRespondTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatestwittervoicehandlertemplate">templates.twitterVoiceHandlerTemplate?<a href="#templatestwittervoicehandlertemplate" class="hash-link" aria-label="Direct link to templates.twitterVoiceHandlerTemplate?" title="Direct link to templates.twitterVoiceHandlerTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>twitterVoiceHandlerTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesinstagramposttemplate">templates.instagramPostTemplate?<a href="#templatesinstagramposttemplate" class="hash-link" aria-label="Direct link to templates.instagramPostTemplate?" title="Direct link to templates.instagramPostTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>instagramPostTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesinstagrammessagehandlertemplate">templates.instagramMessageHandlerTemplate?<a href="#templatesinstagrammessagehandlertemplate" class="hash-link" aria-label="Direct link to templates.instagramMessageHandlerTemplate?" title="Direct link to templates.instagramMessageHandlerTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>instagramMessageHandlerTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesinstagramshouldrespondtemplate">templates.instagramShouldRespondTemplate?<a href="#templatesinstagramshouldrespondtemplate" class="hash-link" aria-label="Direct link to templates.instagramShouldRespondTemplate?" title="Direct link to templates.instagramShouldRespondTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>instagramShouldRespondTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesfarcasterposttemplate">templates.farcasterPostTemplate?<a href="#templatesfarcasterposttemplate" class="hash-link" aria-label="Direct link to templates.farcasterPostTemplate?" title="Direct link to templates.farcasterPostTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>farcasterPostTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templateslensposttemplate">templates.lensPostTemplate?<a href="#templateslensposttemplate" class="hash-link" aria-label="Direct link to templates.lensPostTemplate?" title="Direct link to templates.lensPostTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>lensPostTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesfarcastermessagehandlertemplate">templates.farcasterMessageHandlerTemplate?<a href="#templatesfarcastermessagehandlertemplate" class="hash-link" aria-label="Direct link to templates.farcasterMessageHandlerTemplate?" title="Direct link to templates.farcasterMessageHandlerTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>farcasterMessageHandlerTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templateslensmessagehandlertemplate">templates.lensMessageHandlerTemplate?<a href="#templateslensmessagehandlertemplate" class="hash-link" aria-label="Direct link to templates.lensMessageHandlerTemplate?" title="Direct link to templates.lensMessageHandlerTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>lensMessageHandlerTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesfarcastershouldrespondtemplate">templates.farcasterShouldRespondTemplate?<a href="#templatesfarcastershouldrespondtemplate" class="hash-link" aria-label="Direct link to templates.farcasterShouldRespondTemplate?" title="Direct link to templates.farcasterShouldRespondTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>farcasterShouldRespondTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templateslensshouldrespondtemplate">templates.lensShouldRespondTemplate?<a href="#templateslensshouldrespondtemplate" class="hash-link" aria-label="Direct link to templates.lensShouldRespondTemplate?" title="Direct link to templates.lensShouldRespondTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>lensShouldRespondTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatestelegrammessagehandlertemplate">templates.telegramMessageHandlerTemplate?<a href="#templatestelegrammessagehandlertemplate" class="hash-link" aria-label="Direct link to templates.telegramMessageHandlerTemplate?" title="Direct link to templates.telegramMessageHandlerTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>telegramMessageHandlerTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatestelegramshouldrespondtemplate">templates.telegramShouldRespondTemplate?<a href="#templatestelegramshouldrespondtemplate" class="hash-link" aria-label="Direct link to templates.telegramShouldRespondTemplate?" title="Direct link to templates.telegramShouldRespondTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>telegramShouldRespondTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatestelegramautoposttemplate">templates.telegramAutoPostTemplate?<a href="#templatestelegramautoposttemplate" class="hash-link" aria-label="Direct link to templates.telegramAutoPostTemplate?" title="Direct link to templates.telegramAutoPostTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>telegramAutoPostTemplate</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatestelegrampinnedmessagetemplate">templates.telegramPinnedMessageTemplate?<a href="#templatestelegrampinnedmessagetemplate" class="hash-link" aria-label="Direct link to templates.telegramPinnedMessageTemplate?" title="Direct link to templates.telegramPinnedMessageTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>telegramPinnedMessageTemplate</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesdiscordautoposttemplate">templates.discordAutoPostTemplate?<a href="#templatesdiscordautoposttemplate" class="hash-link" aria-label="Direct link to templates.discordAutoPostTemplate?" title="Direct link to templates.discordAutoPostTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>discordAutoPostTemplate</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesdiscordannouncementhypetemplate">templates.discordAnnouncementHypeTemplate?<a href="#templatesdiscordannouncementhypetemplate" class="hash-link" aria-label="Direct link to templates.discordAnnouncementHypeTemplate?" title="Direct link to templates.discordAnnouncementHypeTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>discordAnnouncementHypeTemplate</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesdiscordvoicehandlertemplate">templates.discordVoiceHandlerTemplate?<a href="#templatesdiscordvoicehandlertemplate" class="hash-link" aria-label="Direct link to templates.discordVoiceHandlerTemplate?" title="Direct link to templates.discordVoiceHandlerTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>discordVoiceHandlerTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesdiscordshouldrespondtemplate">templates.discordShouldRespondTemplate?<a href="#templatesdiscordshouldrespondtemplate" class="hash-link" aria-label="Direct link to templates.discordShouldRespondTemplate?" title="Direct link to templates.discordShouldRespondTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>discordShouldRespondTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesdiscordmessagehandlertemplate">templates.discordMessageHandlerTemplate?<a href="#templatesdiscordmessagehandlertemplate" class="hash-link" aria-label="Direct link to templates.discordMessageHandlerTemplate?" title="Direct link to templates.discordMessageHandlerTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>discordMessageHandlerTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesslackmessagehandlertemplate">templates.slackMessageHandlerTemplate?<a href="#templatesslackmessagehandlertemplate" class="hash-link" aria-label="Direct link to templates.slackMessageHandlerTemplate?" title="Direct link to templates.slackMessageHandlerTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>slackMessageHandlerTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesslackshouldrespondtemplate">templates.slackShouldRespondTemplate?<a href="#templatesslackshouldrespondtemplate" class="hash-link" aria-label="Direct link to templates.slackShouldRespondTemplate?" title="Direct link to templates.slackShouldRespondTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>slackShouldRespondTemplate</strong>: <code>TemplateType</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesjeeterposttemplate">templates.jeeterPostTemplate?<a href="#templatesjeeterposttemplate" class="hash-link" aria-label="Direct link to templates.jeeterPostTemplate?" title="Direct link to templates.jeeterPostTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>jeeterPostTemplate</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesjeetersearchtemplate">templates.jeeterSearchTemplate?<a href="#templatesjeetersearchtemplate" class="hash-link" aria-label="Direct link to templates.jeeterSearchTemplate?" title="Direct link to templates.jeeterSearchTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>jeeterSearchTemplate</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesjeeterinteractiontemplate">templates.jeeterInteractionTemplate?<a href="#templatesjeeterinteractiontemplate" class="hash-link" aria-label="Direct link to templates.jeeterInteractionTemplate?" title="Direct link to templates.jeeterInteractionTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>jeeterInteractionTemplate</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesjeetermessagehandlertemplate">templates.jeeterMessageHandlerTemplate?<a href="#templatesjeetermessagehandlertemplate" class="hash-link" aria-label="Direct link to templates.jeeterMessageHandlerTemplate?" title="Direct link to templates.jeeterMessageHandlerTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>jeeterMessageHandlerTemplate</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesjeetershouldrespondtemplate">templates.jeeterShouldRespondTemplate?<a href="#templatesjeetershouldrespondtemplate" class="hash-link" aria-label="Direct link to templates.jeeterShouldRespondTemplate?" title="Direct link to templates.jeeterShouldRespondTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>jeeterShouldRespondTemplate</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="templatesdevaposttemplate">templates.devaPostTemplate?<a href="#templatesdevaposttemplate" class="hash-link" aria-label="Direct link to templates.devaPostTemplate?" title="Direct link to templates.devaPostTemplate?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>devaPostTemplate</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="bio">bio<a href="#bio" class="hash-link" aria-label="Direct link to bio" title="Direct link to bio">​</a></h3>
+<blockquote>
+<p><strong>bio</strong>: <code>string</code> | <code>string</code>[]</p>
+</blockquote>
+<p>Character biography</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="lore">lore<a href="#lore" class="hash-link" aria-label="Direct link to lore" title="Direct link to lore">​</a></h3>
+<blockquote>
+<p><strong>lore</strong>: <code>string</code>[]</p>
+</blockquote>
+<p>Character background lore</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="messageexamples">messageExamples<a href="#messageexamples" class="hash-link" aria-label="Direct link to messageExamples" title="Direct link to messageExamples">​</a></h3>
+<blockquote>
+<p><strong>messageExamples</strong>: <a href="/api/namespaces/v1/interfaces/MessageExample"><code>MessageExample</code></a>[][]</p>
+</blockquote>
+<p>Example messages</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="postexamples">postExamples<a href="#postexamples" class="hash-link" aria-label="Direct link to postExamples" title="Direct link to postExamples">​</a></h3>
+<blockquote>
+<p><strong>postExamples</strong>: <code>string</code>[]</p>
+</blockquote>
+<p>Example posts</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="topics">topics<a href="#topics" class="hash-link" aria-label="Direct link to topics" title="Direct link to topics">​</a></h3>
+<blockquote>
+<p><strong>topics</strong>: <code>string</code>[]</p>
+</blockquote>
+<p>Known topics</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="adjectives">adjectives<a href="#adjectives" class="hash-link" aria-label="Direct link to adjectives" title="Direct link to adjectives">​</a></h3>
+<blockquote>
+<p><strong>adjectives</strong>: <code>string</code>[]</p>
+</blockquote>
+<p>Character traits</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="knowledge">knowledge?<a href="#knowledge" class="hash-link" aria-label="Direct link to knowledge?" title="Direct link to knowledge?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>knowledge</strong>: (<code>string</code> | <code>object</code> | <code>object</code>)[]</p>
+</blockquote>
+<p>Optional knowledge base</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="plugins">plugins<a href="#plugins" class="hash-link" aria-label="Direct link to plugins" title="Direct link to plugins">​</a></h3>
+<blockquote>
+<p><strong>plugins</strong>: <a href="/api/namespaces/v1/type-aliases/Plugin"><code>Plugin</code></a>[]</p>
+</blockquote>
+<p>Available plugins</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="postprocessors">postProcessors?<a href="#postprocessors" class="hash-link" aria-label="Direct link to postProcessors?" title="Direct link to postProcessors?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>postProcessors</strong>: <code>Pick</code>&lt;<a href="/api/namespaces/v1/type-aliases/Plugin"><code>Plugin</code></a>, <code>&quot;name&quot;</code> | <code>&quot;description&quot;</code> | <code>&quot;handlePostCharacterLoaded&quot;</code>&gt;[]</p>
+</blockquote>
+<p>Character Processor Plugins</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settings">settings?<a href="#settings" class="hash-link" aria-label="Direct link to settings?" title="Direct link to settings?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>settings</strong>: <code>object</code></p>
+</blockquote>
+<p>Optional configuration</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingssecrets">settings.secrets?<a href="#settingssecrets" class="hash-link" aria-label="Direct link to settings.secrets?" title="Direct link to settings.secrets?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>secrets</strong>: <code>object</code></p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_fF9Z" id="index-signature">Index Signature<a href="#index-signature" class="hash-link" aria-label="Direct link to Index Signature" title="Direct link to Index Signature">​</a></h4>
+<p>[<code>key</code>: <code>string</code>]: <code>string</code></p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsintiface">settings.intiface?<a href="#settingsintiface" class="hash-link" aria-label="Direct link to settings.intiface?" title="Direct link to settings.intiface?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>intiface</strong>: <code>boolean</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsimagesettings">settings.imageSettings?<a href="#settingsimagesettings" class="hash-link" aria-label="Direct link to settings.imageSettings?" title="Direct link to settings.imageSettings?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>imageSettings</strong>: <code>object</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsimagesettingssteps">settings.imageSettings.steps?<a href="#settingsimagesettingssteps" class="hash-link" aria-label="Direct link to settings.imageSettings.steps?" title="Direct link to settings.imageSettings.steps?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>steps</strong>: <code>number</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsimagesettingswidth">settings.imageSettings.width?<a href="#settingsimagesettingswidth" class="hash-link" aria-label="Direct link to settings.imageSettings.width?" title="Direct link to settings.imageSettings.width?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>width</strong>: <code>number</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsimagesettingsheight">settings.imageSettings.height?<a href="#settingsimagesettingsheight" class="hash-link" aria-label="Direct link to settings.imageSettings.height?" title="Direct link to settings.imageSettings.height?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>height</strong>: <code>number</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsimagesettingscfgscale">settings.imageSettings.cfgScale?<a href="#settingsimagesettingscfgscale" class="hash-link" aria-label="Direct link to settings.imageSettings.cfgScale?" title="Direct link to settings.imageSettings.cfgScale?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>cfgScale</strong>: <code>number</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsimagesettingsnegativeprompt">settings.imageSettings.negativePrompt?<a href="#settingsimagesettingsnegativeprompt" class="hash-link" aria-label="Direct link to settings.imageSettings.negativePrompt?" title="Direct link to settings.imageSettings.negativePrompt?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>negativePrompt</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsimagesettingsnumiterations">settings.imageSettings.numIterations?<a href="#settingsimagesettingsnumiterations" class="hash-link" aria-label="Direct link to settings.imageSettings.numIterations?" title="Direct link to settings.imageSettings.numIterations?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>numIterations</strong>: <code>number</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsimagesettingsguidancescale">settings.imageSettings.guidanceScale?<a href="#settingsimagesettingsguidancescale" class="hash-link" aria-label="Direct link to settings.imageSettings.guidanceScale?" title="Direct link to settings.imageSettings.guidanceScale?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>guidanceScale</strong>: <code>number</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsimagesettingsseed">settings.imageSettings.seed?<a href="#settingsimagesettingsseed" class="hash-link" aria-label="Direct link to settings.imageSettings.seed?" title="Direct link to settings.imageSettings.seed?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>seed</strong>: <code>number</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsimagesettingsmodelid">settings.imageSettings.modelId?<a href="#settingsimagesettingsmodelid" class="hash-link" aria-label="Direct link to settings.imageSettings.modelId?" title="Direct link to settings.imageSettings.modelId?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>modelId</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsimagesettingsjobid">settings.imageSettings.jobId?<a href="#settingsimagesettingsjobid" class="hash-link" aria-label="Direct link to settings.imageSettings.jobId?" title="Direct link to settings.imageSettings.jobId?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>jobId</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsimagesettingscount">settings.imageSettings.count?<a href="#settingsimagesettingscount" class="hash-link" aria-label="Direct link to settings.imageSettings.count?" title="Direct link to settings.imageSettings.count?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>count</strong>: <code>number</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsimagesettingsstylepreset">settings.imageSettings.stylePreset?<a href="#settingsimagesettingsstylepreset" class="hash-link" aria-label="Direct link to settings.imageSettings.stylePreset?" title="Direct link to settings.imageSettings.stylePreset?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>stylePreset</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsimagesettingshidewatermark">settings.imageSettings.hideWatermark?<a href="#settingsimagesettingshidewatermark" class="hash-link" aria-label="Direct link to settings.imageSettings.hideWatermark?" title="Direct link to settings.imageSettings.hideWatermark?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>hideWatermark</strong>: <code>boolean</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsimagesettingssafemode">settings.imageSettings.safeMode?<a href="#settingsimagesettingssafemode" class="hash-link" aria-label="Direct link to settings.imageSettings.safeMode?" title="Direct link to settings.imageSettings.safeMode?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>safeMode</strong>: <code>boolean</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsvoice">settings.voice?<a href="#settingsvoice" class="hash-link" aria-label="Direct link to settings.voice?" title="Direct link to settings.voice?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>voice</strong>: <code>object</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsvoicemodel">settings.voice.model?<a href="#settingsvoicemodel" class="hash-link" aria-label="Direct link to settings.voice.model?" title="Direct link to settings.voice.model?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>model</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsvoiceurl">settings.voice.url?<a href="#settingsvoiceurl" class="hash-link" aria-label="Direct link to settings.voice.url?" title="Direct link to settings.voice.url?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>url</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsvoiceelevenlabs">settings.voice.elevenlabs?<a href="#settingsvoiceelevenlabs" class="hash-link" aria-label="Direct link to settings.voice.elevenlabs?" title="Direct link to settings.voice.elevenlabs?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>elevenlabs</strong>: <code>object</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsvoiceelevenlabsvoiceid">settings.voice.elevenlabs.voiceId<a href="#settingsvoiceelevenlabsvoiceid" class="hash-link" aria-label="Direct link to settings.voice.elevenlabs.voiceId" title="Direct link to settings.voice.elevenlabs.voiceId">​</a></h3>
+<blockquote>
+<p><strong>voiceId</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsvoiceelevenlabsmodel">settings.voice.elevenlabs.model?<a href="#settingsvoiceelevenlabsmodel" class="hash-link" aria-label="Direct link to settings.voice.elevenlabs.model?" title="Direct link to settings.voice.elevenlabs.model?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>model</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsvoiceelevenlabsstability">settings.voice.elevenlabs.stability?<a href="#settingsvoiceelevenlabsstability" class="hash-link" aria-label="Direct link to settings.voice.elevenlabs.stability?" title="Direct link to settings.voice.elevenlabs.stability?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>stability</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsvoiceelevenlabssimilarityboost">settings.voice.elevenlabs.similarityBoost?<a href="#settingsvoiceelevenlabssimilarityboost" class="hash-link" aria-label="Direct link to settings.voice.elevenlabs.similarityBoost?" title="Direct link to settings.voice.elevenlabs.similarityBoost?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>similarityBoost</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsvoiceelevenlabsstyle">settings.voice.elevenlabs.style?<a href="#settingsvoiceelevenlabsstyle" class="hash-link" aria-label="Direct link to settings.voice.elevenlabs.style?" title="Direct link to settings.voice.elevenlabs.style?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>style</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsvoiceelevenlabsusespeakerboost">settings.voice.elevenlabs.useSpeakerBoost?<a href="#settingsvoiceelevenlabsusespeakerboost" class="hash-link" aria-label="Direct link to settings.voice.elevenlabs.useSpeakerBoost?" title="Direct link to settings.voice.elevenlabs.useSpeakerBoost?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>useSpeakerBoost</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsmodel">settings.model?<a href="#settingsmodel" class="hash-link" aria-label="Direct link to settings.model?" title="Direct link to settings.model?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>model</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsmodelconfig">settings.modelConfig?<a href="#settingsmodelconfig" class="hash-link" aria-label="Direct link to settings.modelConfig?" title="Direct link to settings.modelConfig?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>modelConfig</strong>: <code>ModelConfiguration</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsembeddingmodel">settings.embeddingModel?<a href="#settingsembeddingmodel" class="hash-link" aria-label="Direct link to settings.embeddingModel?" title="Direct link to settings.embeddingModel?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>embeddingModel</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingschains">settings.chains?<a href="#settingschains" class="hash-link" aria-label="Direct link to settings.chains?" title="Direct link to settings.chains?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>chains</strong>: <code>object</code></p>
+</blockquote>
+<h4 class="anchor anchorWithStickyNavbar_fF9Z" id="index-signature-1">Index Signature<a href="#index-signature-1" class="hash-link" aria-label="Direct link to Index Signature" title="Direct link to Index Signature">​</a></h4>
+<p>[<code>key</code>: <code>string</code>]: <code>string</code> | <code>any</code>[]</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingschainsevm">settings.chains.evm?<a href="#settingschainsevm" class="hash-link" aria-label="Direct link to settings.chains.evm?" title="Direct link to settings.chains.evm?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>evm</strong>: <code>any</code>[]</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingschainssolana">settings.chains.solana?<a href="#settingschainssolana" class="hash-link" aria-label="Direct link to settings.chains.solana?" title="Direct link to settings.chains.solana?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>solana</strong>: <code>any</code>[]</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingstranscription">settings.transcription?<a href="#settingstranscription" class="hash-link" aria-label="Direct link to settings.transcription?" title="Direct link to settings.transcription?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>transcription</strong>: <code>TranscriptionProvider</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="settingsragknowledge">settings.ragKnowledge?<a href="#settingsragknowledge" class="hash-link" aria-label="Direct link to settings.ragKnowledge?" title="Direct link to settings.ragKnowledge?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>ragKnowledge</strong>: <code>boolean</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfig">clientConfig?<a href="#clientconfig" class="hash-link" aria-label="Direct link to clientConfig?" title="Direct link to clientConfig?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>clientConfig</strong>: <code>object</code></p>
+</blockquote>
+<p>Optional client-specific config</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigdiscord">clientConfig.discord?<a href="#clientconfigdiscord" class="hash-link" aria-label="Direct link to clientConfig.discord?" title="Direct link to clientConfig.discord?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>discord</strong>: <code>object</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigdiscordshouldignorebotmessages">clientConfig.discord.shouldIgnoreBotMessages?<a href="#clientconfigdiscordshouldignorebotmessages" class="hash-link" aria-label="Direct link to clientConfig.discord.shouldIgnoreBotMessages?" title="Direct link to clientConfig.discord.shouldIgnoreBotMessages?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>shouldIgnoreBotMessages</strong>: <code>boolean</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigdiscordshouldignoredirectmessages">clientConfig.discord.shouldIgnoreDirectMessages?<a href="#clientconfigdiscordshouldignoredirectmessages" class="hash-link" aria-label="Direct link to clientConfig.discord.shouldIgnoreDirectMessages?" title="Direct link to clientConfig.discord.shouldIgnoreDirectMessages?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>shouldIgnoreDirectMessages</strong>: <code>boolean</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigdiscordshouldrespondonlytomentions">clientConfig.discord.shouldRespondOnlyToMentions?<a href="#clientconfigdiscordshouldrespondonlytomentions" class="hash-link" aria-label="Direct link to clientConfig.discord.shouldRespondOnlyToMentions?" title="Direct link to clientConfig.discord.shouldRespondOnlyToMentions?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>shouldRespondOnlyToMentions</strong>: <code>boolean</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigdiscordmessagesimilaritythreshold">clientConfig.discord.messageSimilarityThreshold?<a href="#clientconfigdiscordmessagesimilaritythreshold" class="hash-link" aria-label="Direct link to clientConfig.discord.messageSimilarityThreshold?" title="Direct link to clientConfig.discord.messageSimilarityThreshold?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>messageSimilarityThreshold</strong>: <code>number</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigdiscordispartofteam">clientConfig.discord.isPartOfTeam?<a href="#clientconfigdiscordispartofteam" class="hash-link" aria-label="Direct link to clientConfig.discord.isPartOfTeam?" title="Direct link to clientConfig.discord.isPartOfTeam?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>isPartOfTeam</strong>: <code>boolean</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigdiscordteamagentids">clientConfig.discord.teamAgentIds?<a href="#clientconfigdiscordteamagentids" class="hash-link" aria-label="Direct link to clientConfig.discord.teamAgentIds?" title="Direct link to clientConfig.discord.teamAgentIds?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>teamAgentIds</strong>: <code>string</code>[]</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigdiscordteamleaderid">clientConfig.discord.teamLeaderId?<a href="#clientconfigdiscordteamleaderid" class="hash-link" aria-label="Direct link to clientConfig.discord.teamLeaderId?" title="Direct link to clientConfig.discord.teamLeaderId?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>teamLeaderId</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigdiscordteammemberinterestkeywords">clientConfig.discord.teamMemberInterestKeywords?<a href="#clientconfigdiscordteammemberinterestkeywords" class="hash-link" aria-label="Direct link to clientConfig.discord.teamMemberInterestKeywords?" title="Direct link to clientConfig.discord.teamMemberInterestKeywords?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>teamMemberInterestKeywords</strong>: <code>string</code>[]</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigdiscordallowedchannelids">clientConfig.discord.allowedChannelIds?<a href="#clientconfigdiscordallowedchannelids" class="hash-link" aria-label="Direct link to clientConfig.discord.allowedChannelIds?" title="Direct link to clientConfig.discord.allowedChannelIds?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>allowedChannelIds</strong>: <code>string</code>[]</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigdiscordautopost">clientConfig.discord.autoPost?<a href="#clientconfigdiscordautopost" class="hash-link" aria-label="Direct link to clientConfig.discord.autoPost?" title="Direct link to clientConfig.discord.autoPost?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>autoPost</strong>: <code>object</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigdiscordautopostenabled">clientConfig.discord.autoPost.enabled?<a href="#clientconfigdiscordautopostenabled" class="hash-link" aria-label="Direct link to clientConfig.discord.autoPost.enabled?" title="Direct link to clientConfig.discord.autoPost.enabled?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>enabled</strong>: <code>boolean</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigdiscordautopostmonitortime">clientConfig.discord.autoPost.monitorTime?<a href="#clientconfigdiscordautopostmonitortime" class="hash-link" aria-label="Direct link to clientConfig.discord.autoPost.monitorTime?" title="Direct link to clientConfig.discord.autoPost.monitorTime?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>monitorTime</strong>: <code>number</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigdiscordautopostinactivitythreshold">clientConfig.discord.autoPost.inactivityThreshold?<a href="#clientconfigdiscordautopostinactivitythreshold" class="hash-link" aria-label="Direct link to clientConfig.discord.autoPost.inactivityThreshold?" title="Direct link to clientConfig.discord.autoPost.inactivityThreshold?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>inactivityThreshold</strong>: <code>number</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigdiscordautopostmainchannelid">clientConfig.discord.autoPost.mainChannelId?<a href="#clientconfigdiscordautopostmainchannelid" class="hash-link" aria-label="Direct link to clientConfig.discord.autoPost.mainChannelId?" title="Direct link to clientConfig.discord.autoPost.mainChannelId?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>mainChannelId</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigdiscordautopostannouncementchannelids">clientConfig.discord.autoPost.announcementChannelIds?<a href="#clientconfigdiscordautopostannouncementchannelids" class="hash-link" aria-label="Direct link to clientConfig.discord.autoPost.announcementChannelIds?" title="Direct link to clientConfig.discord.autoPost.announcementChannelIds?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>announcementChannelIds</strong>: <code>string</code>[]</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigdiscordautopostmintimebetweenposts">clientConfig.discord.autoPost.minTimeBetweenPosts?<a href="#clientconfigdiscordautopostmintimebetweenposts" class="hash-link" aria-label="Direct link to clientConfig.discord.autoPost.minTimeBetweenPosts?" title="Direct link to clientConfig.discord.autoPost.minTimeBetweenPosts?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>minTimeBetweenPosts</strong>: <code>number</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigtelegram">clientConfig.telegram?<a href="#clientconfigtelegram" class="hash-link" aria-label="Direct link to clientConfig.telegram?" title="Direct link to clientConfig.telegram?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>telegram</strong>: <code>object</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigtelegramshouldignorebotmessages">clientConfig.telegram.shouldIgnoreBotMessages?<a href="#clientconfigtelegramshouldignorebotmessages" class="hash-link" aria-label="Direct link to clientConfig.telegram.shouldIgnoreBotMessages?" title="Direct link to clientConfig.telegram.shouldIgnoreBotMessages?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>shouldIgnoreBotMessages</strong>: <code>boolean</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigtelegramshouldignoredirectmessages">clientConfig.telegram.shouldIgnoreDirectMessages?<a href="#clientconfigtelegramshouldignoredirectmessages" class="hash-link" aria-label="Direct link to clientConfig.telegram.shouldIgnoreDirectMessages?" title="Direct link to clientConfig.telegram.shouldIgnoreDirectMessages?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>shouldIgnoreDirectMessages</strong>: <code>boolean</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigtelegramshouldrespondonlytomentions">clientConfig.telegram.shouldRespondOnlyToMentions?<a href="#clientconfigtelegramshouldrespondonlytomentions" class="hash-link" aria-label="Direct link to clientConfig.telegram.shouldRespondOnlyToMentions?" title="Direct link to clientConfig.telegram.shouldRespondOnlyToMentions?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>shouldRespondOnlyToMentions</strong>: <code>boolean</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigtelegramshouldonlyjoininallowedgroups">clientConfig.telegram.shouldOnlyJoinInAllowedGroups?<a href="#clientconfigtelegramshouldonlyjoininallowedgroups" class="hash-link" aria-label="Direct link to clientConfig.telegram.shouldOnlyJoinInAllowedGroups?" title="Direct link to clientConfig.telegram.shouldOnlyJoinInAllowedGroups?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>shouldOnlyJoinInAllowedGroups</strong>: <code>boolean</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigtelegramallowedgroupids">clientConfig.telegram.allowedGroupIds?<a href="#clientconfigtelegramallowedgroupids" class="hash-link" aria-label="Direct link to clientConfig.telegram.allowedGroupIds?" title="Direct link to clientConfig.telegram.allowedGroupIds?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>allowedGroupIds</strong>: <code>string</code>[]</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigtelegrammessagesimilaritythreshold">clientConfig.telegram.messageSimilarityThreshold?<a href="#clientconfigtelegrammessagesimilaritythreshold" class="hash-link" aria-label="Direct link to clientConfig.telegram.messageSimilarityThreshold?" title="Direct link to clientConfig.telegram.messageSimilarityThreshold?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>messageSimilarityThreshold</strong>: <code>number</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigtelegramispartofteam">clientConfig.telegram.isPartOfTeam?<a href="#clientconfigtelegramispartofteam" class="hash-link" aria-label="Direct link to clientConfig.telegram.isPartOfTeam?" title="Direct link to clientConfig.telegram.isPartOfTeam?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>isPartOfTeam</strong>: <code>boolean</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigtelegramteamagentids">clientConfig.telegram.teamAgentIds?<a href="#clientconfigtelegramteamagentids" class="hash-link" aria-label="Direct link to clientConfig.telegram.teamAgentIds?" title="Direct link to clientConfig.telegram.teamAgentIds?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>teamAgentIds</strong>: <code>string</code>[]</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigtelegramteamleaderid">clientConfig.telegram.teamLeaderId?<a href="#clientconfigtelegramteamleaderid" class="hash-link" aria-label="Direct link to clientConfig.telegram.teamLeaderId?" title="Direct link to clientConfig.telegram.teamLeaderId?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>teamLeaderId</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigtelegramteammemberinterestkeywords">clientConfig.telegram.teamMemberInterestKeywords?<a href="#clientconfigtelegramteammemberinterestkeywords" class="hash-link" aria-label="Direct link to clientConfig.telegram.teamMemberInterestKeywords?" title="Direct link to clientConfig.telegram.teamMemberInterestKeywords?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>teamMemberInterestKeywords</strong>: <code>string</code>[]</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigtelegramautopost">clientConfig.telegram.autoPost?<a href="#clientconfigtelegramautopost" class="hash-link" aria-label="Direct link to clientConfig.telegram.autoPost?" title="Direct link to clientConfig.telegram.autoPost?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>autoPost</strong>: <code>object</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigtelegramautopostenabled">clientConfig.telegram.autoPost.enabled?<a href="#clientconfigtelegramautopostenabled" class="hash-link" aria-label="Direct link to clientConfig.telegram.autoPost.enabled?" title="Direct link to clientConfig.telegram.autoPost.enabled?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>enabled</strong>: <code>boolean</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigtelegramautopostmonitortime">clientConfig.telegram.autoPost.monitorTime?<a href="#clientconfigtelegramautopostmonitortime" class="hash-link" aria-label="Direct link to clientConfig.telegram.autoPost.monitorTime?" title="Direct link to clientConfig.telegram.autoPost.monitorTime?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>monitorTime</strong>: <code>number</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigtelegramautopostinactivitythreshold">clientConfig.telegram.autoPost.inactivityThreshold?<a href="#clientconfigtelegramautopostinactivitythreshold" class="hash-link" aria-label="Direct link to clientConfig.telegram.autoPost.inactivityThreshold?" title="Direct link to clientConfig.telegram.autoPost.inactivityThreshold?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>inactivityThreshold</strong>: <code>number</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigtelegramautopostmainchannelid">clientConfig.telegram.autoPost.mainChannelId?<a href="#clientconfigtelegramautopostmainchannelid" class="hash-link" aria-label="Direct link to clientConfig.telegram.autoPost.mainChannelId?" title="Direct link to clientConfig.telegram.autoPost.mainChannelId?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>mainChannelId</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigtelegramautopostpinnedmessagesgroups">clientConfig.telegram.autoPost.pinnedMessagesGroups?<a href="#clientconfigtelegramautopostpinnedmessagesgroups" class="hash-link" aria-label="Direct link to clientConfig.telegram.autoPost.pinnedMessagesGroups?" title="Direct link to clientConfig.telegram.autoPost.pinnedMessagesGroups?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>pinnedMessagesGroups</strong>: <code>string</code>[]</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigtelegramautopostmintimebetweenposts">clientConfig.telegram.autoPost.minTimeBetweenPosts?<a href="#clientconfigtelegramautopostmintimebetweenposts" class="hash-link" aria-label="Direct link to clientConfig.telegram.autoPost.minTimeBetweenPosts?" title="Direct link to clientConfig.telegram.autoPost.minTimeBetweenPosts?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>minTimeBetweenPosts</strong>: <code>number</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigslack">clientConfig.slack?<a href="#clientconfigslack" class="hash-link" aria-label="Direct link to clientConfig.slack?" title="Direct link to clientConfig.slack?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>slack</strong>: <code>object</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigslackshouldignorebotmessages">clientConfig.slack.shouldIgnoreBotMessages?<a href="#clientconfigslackshouldignorebotmessages" class="hash-link" aria-label="Direct link to clientConfig.slack.shouldIgnoreBotMessages?" title="Direct link to clientConfig.slack.shouldIgnoreBotMessages?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>shouldIgnoreBotMessages</strong>: <code>boolean</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfigslackshouldignoredirectmessages">clientConfig.slack.shouldIgnoreDirectMessages?<a href="#clientconfigslackshouldignoredirectmessages" class="hash-link" aria-label="Direct link to clientConfig.slack.shouldIgnoreDirectMessages?" title="Direct link to clientConfig.slack.shouldIgnoreDirectMessages?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>shouldIgnoreDirectMessages</strong>: <code>boolean</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfiggitbook">clientConfig.gitbook?<a href="#clientconfiggitbook" class="hash-link" aria-label="Direct link to clientConfig.gitbook?" title="Direct link to clientConfig.gitbook?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>gitbook</strong>: <code>object</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfiggitbookkeywords">clientConfig.gitbook.keywords?<a href="#clientconfiggitbookkeywords" class="hash-link" aria-label="Direct link to clientConfig.gitbook.keywords?" title="Direct link to clientConfig.gitbook.keywords?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>keywords</strong>: <code>object</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfiggitbookkeywordsprojectterms">clientConfig.gitbook.keywords.projectTerms?<a href="#clientconfiggitbookkeywordsprojectterms" class="hash-link" aria-label="Direct link to clientConfig.gitbook.keywords.projectTerms?" title="Direct link to clientConfig.gitbook.keywords.projectTerms?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>projectTerms</strong>: <code>string</code>[]</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfiggitbookkeywordsgeneralqueries">clientConfig.gitbook.keywords.generalQueries?<a href="#clientconfiggitbookkeywordsgeneralqueries" class="hash-link" aria-label="Direct link to clientConfig.gitbook.keywords.generalQueries?" title="Direct link to clientConfig.gitbook.keywords.generalQueries?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>generalQueries</strong>: <code>string</code>[]</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="clientconfiggitbookdocumenttriggers">clientConfig.gitbook.documentTriggers?<a href="#clientconfiggitbookdocumenttriggers" class="hash-link" aria-label="Direct link to clientConfig.gitbook.documentTriggers?" title="Direct link to clientConfig.gitbook.documentTriggers?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>documentTriggers</strong>: <code>string</code>[]</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="style">style<a href="#style" class="hash-link" aria-label="Direct link to style" title="Direct link to style">​</a></h3>
+<blockquote>
+<p><strong>style</strong>: <code>object</code></p>
+</blockquote>
+<p>Writing style guides</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="styleall">style.all<a href="#styleall" class="hash-link" aria-label="Direct link to style.all" title="Direct link to style.all">​</a></h3>
+<blockquote>
+<p><strong>all</strong>: <code>string</code>[]</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="stylechat">style.chat<a href="#stylechat" class="hash-link" aria-label="Direct link to style.chat" title="Direct link to style.chat">​</a></h3>
+<blockquote>
+<p><strong>chat</strong>: <code>string</code>[]</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="stylepost">style.post<a href="#stylepost" class="hash-link" aria-label="Direct link to style.post" title="Direct link to style.post">​</a></h3>
+<blockquote>
+<p><strong>post</strong>: <code>string</code>[]</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="twitterprofile">twitterProfile?<a href="#twitterprofile" class="hash-link" aria-label="Direct link to twitterProfile?" title="Direct link to twitterProfile?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>twitterProfile</strong>: <code>object</code></p>
+</blockquote>
+<p>Optional Twitter profile</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="twitterprofileid">twitterProfile.id<a href="#twitterprofileid" class="hash-link" aria-label="Direct link to twitterProfile.id" title="Direct link to twitterProfile.id">​</a></h3>
+<blockquote>
+<p><strong>id</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="twitterprofileusername">twitterProfile.username<a href="#twitterprofileusername" class="hash-link" aria-label="Direct link to twitterProfile.username" title="Direct link to twitterProfile.username">​</a></h3>
+<blockquote>
+<p><strong>username</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="twitterprofilescreenname">twitterProfile.screenName<a href="#twitterprofilescreenname" class="hash-link" aria-label="Direct link to twitterProfile.screenName" title="Direct link to twitterProfile.screenName">​</a></h3>
+<blockquote>
+<p><strong>screenName</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="twitterprofilebio">twitterProfile.bio<a href="#twitterprofilebio" class="hash-link" aria-label="Direct link to twitterProfile.bio" title="Direct link to twitterProfile.bio">​</a></h3>
+<blockquote>
+<p><strong>bio</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="twitterprofilenicknames">twitterProfile.nicknames?<a href="#twitterprofilenicknames" class="hash-link" aria-label="Direct link to twitterProfile.nicknames?" title="Direct link to twitterProfile.nicknames?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>nicknames</strong>: <code>string</code>[]</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="instagramprofile">instagramProfile?<a href="#instagramprofile" class="hash-link" aria-label="Direct link to instagramProfile?" title="Direct link to instagramProfile?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>instagramProfile</strong>: <code>object</code></p>
+</blockquote>
+<p>Optional Instagram profile</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="instagramprofileid">instagramProfile.id<a href="#instagramprofileid" class="hash-link" aria-label="Direct link to instagramProfile.id" title="Direct link to instagramProfile.id">​</a></h3>
+<blockquote>
+<p><strong>id</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="instagramprofileusername">instagramProfile.username<a href="#instagramprofileusername" class="hash-link" aria-label="Direct link to instagramProfile.username" title="Direct link to instagramProfile.username">​</a></h3>
+<blockquote>
+<p><strong>username</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="instagramprofilebio">instagramProfile.bio<a href="#instagramprofilebio" class="hash-link" aria-label="Direct link to instagramProfile.bio" title="Direct link to instagramProfile.bio">​</a></h3>
+<blockquote>
+<p><strong>bio</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="instagramprofilenicknames">instagramProfile.nicknames?<a href="#instagramprofilenicknames" class="hash-link" aria-label="Direct link to instagramProfile.nicknames?" title="Direct link to instagramProfile.nicknames?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>nicknames</strong>: <code>string</code>[]</p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="simsaiprofile">simsaiProfile?<a href="#simsaiprofile" class="hash-link" aria-label="Direct link to simsaiProfile?" title="Direct link to simsaiProfile?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>simsaiProfile</strong>: <code>object</code></p>
+</blockquote>
+<p>Optional SimsAI profile</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="simsaiprofileid">simsaiProfile.id<a href="#simsaiprofileid" class="hash-link" aria-label="Direct link to simsaiProfile.id" title="Direct link to simsaiProfile.id">​</a></h3>
+<blockquote>
+<p><strong>id</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="simsaiprofileusername">simsaiProfile.username<a href="#simsaiprofileusername" class="hash-link" aria-label="Direct link to simsaiProfile.username" title="Direct link to simsaiProfile.username">​</a></h3>
+<blockquote>
+<p><strong>username</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="simsaiprofilescreenname">simsaiProfile.screenName<a href="#simsaiprofilescreenname" class="hash-link" aria-label="Direct link to simsaiProfile.screenName" title="Direct link to simsaiProfile.screenName">​</a></h3>
+<blockquote>
+<p><strong>screenName</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="simsaiprofilebio">simsaiProfile.bio<a href="#simsaiprofilebio" class="hash-link" aria-label="Direct link to simsaiProfile.bio" title="Direct link to simsaiProfile.bio">​</a></h3>
+<blockquote>
+<p><strong>bio</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="nft">nft?<a href="#nft" class="hash-link" aria-label="Direct link to nft?" title="Direct link to nft?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>nft</strong>: <code>object</code></p>
+</blockquote>
+<p>Optional NFT prompt</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="nftprompt">nft.prompt<a href="#nftprompt" class="hash-link" aria-label="Direct link to nft.prompt" title="Direct link to nft.prompt">​</a></h3>
+<blockquote>
+<p><strong>prompt</strong>: <code>string</code></p>
+</blockquote>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="extends">extends?<a href="#extends" class="hash-link" aria-label="Direct link to extends?" title="Direct link to extends?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>extends</strong>: <code>string</code>[]</p>
+</blockquote>
+<p>Optinal Parent characters to inherit information from</p>
+<h3 class="anchor anchorWithStickyNavbar_fF9Z" id="twitterspaces">twitterSpaces?<a href="#twitterspaces" class="hash-link" aria-label="Direct link to twitterSpaces?" title="Direct link to twitterSpaces?">​</a></h3>
+<blockquote>
+<p><code>optional</code> <strong>twitterSpaces</strong>: <code>TwitterSpaceDecisionOptions</code></p>
+</blockquote>
+<h2 class="anchor anchorWithStickyNavbar_fF9Z" id="defined-in">Defined in<a href="#defined-in" class="hash-link" aria-label="Direct link to Defined in" title="Direct link to Defined in">​</a></h2>
+<p><a href="https://github.com/photografereth/fmlabs_ai_agents/blob/main/packages/core/src/specs/v1/types.ts#L739" target="_blank" rel="noopener noreferrer">packages/core/src/specs/v1/types.ts:739</a></p></div></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/api/namespaces/v1/type-aliases/Adapter"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Adapter</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/api/namespaces/v1/type-aliases/Client"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Client</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_TN1Q thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#type-declaration" class="table-of-contents__link toc-highlight">Type declaration</a><ul><li><a href="#id" class="table-of-contents__link toc-highlight">id?</a></li><li><a href="#name" class="table-of-contents__link toc-highlight">name</a></li><li><a href="#username" class="table-of-contents__link toc-highlight">username?</a></li><li><a href="#email" class="table-of-contents__link toc-highlight">email?</a></li><li><a href="#system" class="table-of-contents__link toc-highlight">system?</a></li><li><a href="#modelprovider" class="table-of-contents__link toc-highlight">modelProvider</a></li><li><a href="#imagemodelprovider" class="table-of-contents__link toc-highlight">imageModelProvider?</a></li><li><a href="#imagevisionmodelprovider" class="table-of-contents__link toc-highlight">imageVisionModelProvider?</a></li><li><a href="#modelendpointoverride" class="table-of-contents__link toc-highlight">modelEndpointOverride?</a></li><li><a href="#templates" class="table-of-contents__link toc-highlight">templates?</a></li><li><a href="#templatesgoalstemplate" class="table-of-contents__link toc-highlight">templates.goalsTemplate?</a></li><li><a href="#templatesfactstemplate" class="table-of-contents__link toc-highlight">templates.factsTemplate?</a></li><li><a href="#templatesmessagehandlertemplate" class="table-of-contents__link toc-highlight">templates.messageHandlerTemplate?</a></li><li><a href="#templatesshouldrespondtemplate" class="table-of-contents__link toc-highlight">templates.shouldRespondTemplate?</a></li><li><a href="#templatescontinuemessagehandlertemplate" class="table-of-contents__link toc-highlight">templates.continueMessageHandlerTemplate?</a></li><li><a href="#templatesevaluationtemplate" class="table-of-contents__link toc-highlight">templates.evaluationTemplate?</a></li><li><a href="#templatestwittersearchtemplate" class="table-of-contents__link toc-highlight">templates.twitterSearchTemplate?</a></li><li><a href="#templatestwitteractiontemplate" class="table-of-contents__link toc-highlight">templates.twitterActionTemplate?</a></li><li><a href="#templatestwitterposttemplate" class="table-of-contents__link toc-highlight">templates.twitterPostTemplate?</a></li><li><a href="#templatestwittermessagehandlertemplate" class="table-of-contents__link toc-highlight">templates.twitterMessageHandlerTemplate?</a></li><li><a href="#templatestwittershouldrespondtemplate" class="table-of-contents__link toc-highlight">templates.twitterShouldRespondTemplate?</a></li><li><a href="#templatestwittervoicehandlertemplate" class="table-of-contents__link toc-highlight">templates.twitterVoiceHandlerTemplate?</a></li><li><a href="#templatesinstagramposttemplate" class="table-of-contents__link toc-highlight">templates.instagramPostTemplate?</a></li><li><a href="#templatesinstagrammessagehandlertemplate" class="table-of-contents__link toc-highlight">templates.instagramMessageHandlerTemplate?</a></li><li><a href="#templatesinstagramshouldrespondtemplate" class="table-of-contents__link toc-highlight">templates.instagramShouldRespondTemplate?</a></li><li><a href="#templatesfarcasterposttemplate" class="table-of-contents__link toc-highlight">templates.farcasterPostTemplate?</a></li><li><a href="#templateslensposttemplate" class="table-of-contents__link toc-highlight">templates.lensPostTemplate?</a></li><li><a href="#templatesfarcastermessagehandlertemplate" class="table-of-contents__link toc-highlight">templates.farcasterMessageHandlerTemplate?</a></li><li><a href="#templateslensmessagehandlertemplate" class="table-of-contents__link toc-highlight">templates.lensMessageHandlerTemplate?</a></li><li><a href="#templatesfarcastershouldrespondtemplate" class="table-of-contents__link toc-highlight">templates.farcasterShouldRespondTemplate?</a></li><li><a href="#templateslensshouldrespondtemplate" class="table-of-contents__link toc-highlight">templates.lensShouldRespondTemplate?</a></li><li><a href="#templatestelegrammessagehandlertemplate" class="table-of-contents__link toc-highlight">templates.telegramMessageHandlerTemplate?</a></li><li><a href="#templatestelegramshouldrespondtemplate" class="table-of-contents__link toc-highlight">templates.telegramShouldRespondTemplate?</a></li><li><a href="#templatestelegramautoposttemplate" class="table-of-contents__link toc-highlight">templates.telegramAutoPostTemplate?</a></li><li><a href="#templatestelegrampinnedmessagetemplate" class="table-of-contents__link toc-highlight">templates.telegramPinnedMessageTemplate?</a></li><li><a href="#templatesdiscordautoposttemplate" class="table-of-contents__link toc-highlight">templates.discordAutoPostTemplate?</a></li><li><a href="#templatesdiscordannouncementhypetemplate" class="table-of-contents__link toc-highlight">templates.discordAnnouncementHypeTemplate?</a></li><li><a href="#templatesdiscordvoicehandlertemplate" class="table-of-contents__link toc-highlight">templates.discordVoiceHandlerTemplate?</a></li><li><a href="#templatesdiscordshouldrespondtemplate" class="table-of-contents__link toc-highlight">templates.discordShouldRespondTemplate?</a></li><li><a href="#templatesdiscordmessagehandlertemplate" class="table-of-contents__link toc-highlight">templates.discordMessageHandlerTemplate?</a></li><li><a href="#templatesslackmessagehandlertemplate" class="table-of-contents__link toc-highlight">templates.slackMessageHandlerTemplate?</a></li><li><a href="#templatesslackshouldrespondtemplate" class="table-of-contents__link toc-highlight">templates.slackShouldRespondTemplate?</a></li><li><a href="#templatesjeeterposttemplate" class="table-of-contents__link toc-highlight">templates.jeeterPostTemplate?</a></li><li><a href="#templatesjeetersearchtemplate" class="table-of-contents__link toc-highlight">templates.jeeterSearchTemplate?</a></li><li><a href="#templatesjeeterinteractiontemplate" class="table-of-contents__link toc-highlight">templates.jeeterInteractionTemplate?</a></li><li><a href="#templatesjeetermessagehandlertemplate" class="table-of-contents__link toc-highlight">templates.jeeterMessageHandlerTemplate?</a></li><li><a href="#templatesjeetershouldrespondtemplate" class="table-of-contents__link toc-highlight">templates.jeeterShouldRespondTemplate?</a></li><li><a href="#templatesdevaposttemplate" class="table-of-contents__link toc-highlight">templates.devaPostTemplate?</a></li><li><a href="#bio" class="table-of-contents__link toc-highlight">bio</a></li><li><a href="#lore" class="table-of-contents__link toc-highlight">lore</a></li><li><a href="#messageexamples" class="table-of-contents__link toc-highlight">messageExamples</a></li><li><a href="#postexamples" class="table-of-contents__link toc-highlight">postExamples</a></li><li><a href="#topics" class="table-of-contents__link toc-highlight">topics</a></li><li><a href="#adjectives" class="table-of-contents__link toc-highlight">adjectives</a></li><li><a href="#knowledge" class="table-of-contents__link toc-highlight">knowledge?</a></li><li><a href="#plugins" class="table-of-contents__link toc-highlight">plugins</a></li><li><a href="#postprocessors" class="table-of-contents__link toc-highlight">postProcessors?</a></li><li><a href="#settings" class="table-of-contents__link toc-highlight">settings?</a></li><li><a href="#settingssecrets" class="table-of-contents__link toc-highlight">settings.secrets?</a></li><li><a href="#settingsintiface" class="table-of-contents__link toc-highlight">settings.intiface?</a></li><li><a href="#settingsimagesettings" class="table-of-contents__link toc-highlight">settings.imageSettings?</a></li><li><a href="#settingsimagesettingssteps" class="table-of-contents__link toc-highlight">settings.imageSettings.steps?</a></li><li><a href="#settingsimagesettingswidth" class="table-of-contents__link toc-highlight">settings.imageSettings.width?</a></li><li><a href="#settingsimagesettingsheight" class="table-of-contents__link toc-highlight">settings.imageSettings.height?</a></li><li><a href="#settingsimagesettingscfgscale" class="table-of-contents__link toc-highlight">settings.imageSettings.cfgScale?</a></li><li><a href="#settingsimagesettingsnegativeprompt" class="table-of-contents__link toc-highlight">settings.imageSettings.negativePrompt?</a></li><li><a href="#settingsimagesettingsnumiterations" class="table-of-contents__link toc-highlight">settings.imageSettings.numIterations?</a></li><li><a href="#settingsimagesettingsguidancescale" class="table-of-contents__link toc-highlight">settings.imageSettings.guidanceScale?</a></li><li><a href="#settingsimagesettingsseed" class="table-of-contents__link toc-highlight">settings.imageSettings.seed?</a></li><li><a href="#settingsimagesettingsmodelid" class="table-of-contents__link toc-highlight">settings.imageSettings.modelId?</a></li><li><a href="#settingsimagesettingsjobid" class="table-of-contents__link toc-highlight">settings.imageSettings.jobId?</a></li><li><a href="#settingsimagesettingscount" class="table-of-contents__link toc-highlight">settings.imageSettings.count?</a></li><li><a href="#settingsimagesettingsstylepreset" class="table-of-contents__link toc-highlight">settings.imageSettings.stylePreset?</a></li><li><a href="#settingsimagesettingshidewatermark" class="table-of-contents__link toc-highlight">settings.imageSettings.hideWatermark?</a></li><li><a href="#settingsimagesettingssafemode" class="table-of-contents__link toc-highlight">settings.imageSettings.safeMode?</a></li><li><a href="#settingsvoice" class="table-of-contents__link toc-highlight">settings.voice?</a></li><li><a href="#settingsvoicemodel" class="table-of-contents__link toc-highlight">settings.voice.model?</a></li><li><a href="#settingsvoiceurl" class="table-of-contents__link toc-highlight">settings.voice.url?</a></li><li><a href="#settingsvoiceelevenlabs" class="table-of-contents__link toc-highlight">settings.voice.elevenlabs?</a></li><li><a href="#settingsvoiceelevenlabsvoiceid" class="table-of-contents__link toc-highlight">settings.voice.elevenlabs.voiceId</a></li><li><a href="#settingsvoiceelevenlabsmodel" class="table-of-contents__link toc-highlight">settings.voice.elevenlabs.model?</a></li><li><a href="#settingsvoiceelevenlabsstability" class="table-of-contents__link toc-highlight">settings.voice.elevenlabs.stability?</a></li><li><a href="#settingsvoiceelevenlabssimilarityboost" class="table-of-contents__link toc-highlight">settings.voice.elevenlabs.similarityBoost?</a></li><li><a href="#settingsvoiceelevenlabsstyle" class="table-of-contents__link toc-highlight">settings.voice.elevenlabs.style?</a></li><li><a href="#settingsvoiceelevenlabsusespeakerboost" class="table-of-contents__link toc-highlight">settings.voice.elevenlabs.useSpeakerBoost?</a></li><li><a href="#settingsmodel" class="table-of-contents__link toc-highlight">settings.model?</a></li><li><a href="#settingsmodelconfig" class="table-of-contents__link toc-highlight">settings.modelConfig?</a></li><li><a href="#settingsembeddingmodel" class="table-of-contents__link toc-highlight">settings.embeddingModel?</a></li><li><a href="#settingschains" class="table-of-contents__link toc-highlight">settings.chains?</a></li><li><a href="#settingschainsevm" class="table-of-contents__link toc-highlight">settings.chains.evm?</a></li><li><a href="#settingschainssolana" class="table-of-contents__link toc-highlight">settings.chains.solana?</a></li><li><a href="#settingstranscription" class="table-of-contents__link toc-highlight">settings.transcription?</a></li><li><a href="#settingsragknowledge" class="table-of-contents__link toc-highlight">settings.ragKnowledge?</a></li><li><a href="#clientconfig" class="table-of-contents__link toc-highlight">clientConfig?</a></li><li><a href="#clientconfigdiscord" class="table-of-contents__link toc-highlight">clientConfig.discord?</a></li><li><a href="#clientconfigdiscordshouldignorebotmessages" class="table-of-contents__link toc-highlight">clientConfig.discord.shouldIgnoreBotMessages?</a></li><li><a href="#clientconfigdiscordshouldignoredirectmessages" class="table-of-contents__link toc-highlight">clientConfig.discord.shouldIgnoreDirectMessages?</a></li><li><a href="#clientconfigdiscordshouldrespondonlytomentions" class="table-of-contents__link toc-highlight">clientConfig.discord.shouldRespondOnlyToMentions?</a></li><li><a href="#clientconfigdiscordmessagesimilaritythreshold" class="table-of-contents__link toc-highlight">clientConfig.discord.messageSimilarityThreshold?</a></li><li><a href="#clientconfigdiscordispartofteam" class="table-of-contents__link toc-highlight">clientConfig.discord.isPartOfTeam?</a></li><li><a href="#clientconfigdiscordteamagentids" class="table-of-contents__link toc-highlight">clientConfig.discord.teamAgentIds?</a></li><li><a href="#clientconfigdiscordteamleaderid" class="table-of-contents__link toc-highlight">clientConfig.discord.teamLeaderId?</a></li><li><a href="#clientconfigdiscordteammemberinterestkeywords" class="table-of-contents__link toc-highlight">clientConfig.discord.teamMemberInterestKeywords?</a></li><li><a href="#clientconfigdiscordallowedchannelids" class="table-of-contents__link toc-highlight">clientConfig.discord.allowedChannelIds?</a></li><li><a href="#clientconfigdiscordautopost" class="table-of-contents__link toc-highlight">clientConfig.discord.autoPost?</a></li><li><a href="#clientconfigdiscordautopostenabled" class="table-of-contents__link toc-highlight">clientConfig.discord.autoPost.enabled?</a></li><li><a href="#clientconfigdiscordautopostmonitortime" class="table-of-contents__link toc-highlight">clientConfig.discord.autoPost.monitorTime?</a></li><li><a href="#clientconfigdiscordautopostinactivitythreshold" class="table-of-contents__link toc-highlight">clientConfig.discord.autoPost.inactivityThreshold?</a></li><li><a href="#clientconfigdiscordautopostmainchannelid" class="table-of-contents__link toc-highlight">clientConfig.discord.autoPost.mainChannelId?</a></li><li><a href="#clientconfigdiscordautopostannouncementchannelids" class="table-of-contents__link toc-highlight">clientConfig.discord.autoPost.announcementChannelIds?</a></li><li><a href="#clientconfigdiscordautopostmintimebetweenposts" class="table-of-contents__link toc-highlight">clientConfig.discord.autoPost.minTimeBetweenPosts?</a></li><li><a href="#clientconfigtelegram" class="table-of-contents__link toc-highlight">clientConfig.telegram?</a></li><li><a href="#clientconfigtelegramshouldignorebotmessages" class="table-of-contents__link toc-highlight">clientConfig.telegram.shouldIgnoreBotMessages?</a></li><li><a href="#clientconfigtelegramshouldignoredirectmessages" class="table-of-contents__link toc-highlight">clientConfig.telegram.shouldIgnoreDirectMessages?</a></li><li><a href="#clientconfigtelegramshouldrespondonlytomentions" class="table-of-contents__link toc-highlight">clientConfig.telegram.shouldRespondOnlyToMentions?</a></li><li><a href="#clientconfigtelegramshouldonlyjoininallowedgroups" class="table-of-contents__link toc-highlight">clientConfig.telegram.shouldOnlyJoinInAllowedGroups?</a></li><li><a href="#clientconfigtelegramallowedgroupids" class="table-of-contents__link toc-highlight">clientConfig.telegram.allowedGroupIds?</a></li><li><a href="#clientconfigtelegrammessagesimilaritythreshold" class="table-of-contents__link toc-highlight">clientConfig.telegram.messageSimilarityThreshold?</a></li><li><a href="#clientconfigtelegramispartofteam" class="table-of-contents__link toc-highlight">clientConfig.telegram.isPartOfTeam?</a></li><li><a href="#clientconfigtelegramteamagentids" class="table-of-contents__link toc-highlight">clientConfig.telegram.teamAgentIds?</a></li><li><a href="#clientconfigtelegramteamleaderid" class="table-of-contents__link toc-highlight">clientConfig.telegram.teamLeaderId?</a></li><li><a href="#clientconfigtelegramteammemberinterestkeywords" class="table-of-contents__link toc-highlight">clientConfig.telegram.teamMemberInterestKeywords?</a></li><li><a href="#clientconfigtelegramautopost" class="table-of-contents__link toc-highlight">clientConfig.telegram.autoPost?</a></li><li><a href="#clientconfigtelegramautopostenabled" class="table-of-contents__link toc-highlight">clientConfig.telegram.autoPost.enabled?</a></li><li><a href="#clientconfigtelegramautopostmonitortime" class="table-of-contents__link toc-highlight">clientConfig.telegram.autoPost.monitorTime?</a></li><li><a href="#clientconfigtelegramautopostinactivitythreshold" class="table-of-contents__link toc-highlight">clientConfig.telegram.autoPost.inactivityThreshold?</a></li><li><a href="#clientconfigtelegramautopostmainchannelid" class="table-of-contents__link toc-highlight">clientConfig.telegram.autoPost.mainChannelId?</a></li><li><a href="#clientconfigtelegramautopostpinnedmessagesgroups" class="table-of-contents__link toc-highlight">clientConfig.telegram.autoPost.pinnedMessagesGroups?</a></li><li><a href="#clientconfigtelegramautopostmintimebetweenposts" class="table-of-contents__link toc-highlight">clientConfig.telegram.autoPost.minTimeBetweenPosts?</a></li><li><a href="#clientconfigslack" class="table-of-contents__link toc-highlight">clientConfig.slack?</a></li><li><a href="#clientconfigslackshouldignorebotmessages" class="table-of-contents__link toc-highlight">clientConfig.slack.shouldIgnoreBotMessages?</a></li><li><a href="#clientconfigslackshouldignoredirectmessages" class="table-of-contents__link toc-highlight">clientConfig.slack.shouldIgnoreDirectMessages?</a></li><li><a href="#clientconfiggitbook" class="table-of-contents__link toc-highlight">clientConfig.gitbook?</a></li><li><a href="#clientconfiggitbookkeywords" class="table-of-contents__link toc-highlight">clientConfig.gitbook.keywords?</a></li><li><a href="#clientconfiggitbookkeywordsprojectterms" class="table-of-contents__link toc-highlight">clientConfig.gitbook.keywords.projectTerms?</a></li><li><a href="#clientconfiggitbookkeywordsgeneralqueries" class="table-of-contents__link toc-highlight">clientConfig.gitbook.keywords.generalQueries?</a></li><li><a href="#clientconfiggitbookdocumenttriggers" class="table-of-contents__link toc-highlight">clientConfig.gitbook.documentTriggers?</a></li><li><a href="#style" class="table-of-contents__link toc-highlight">style</a></li><li><a href="#styleall" class="table-of-contents__link toc-highlight">style.all</a></li><li><a href="#stylechat" class="table-of-contents__link toc-highlight">style.chat</a></li><li><a href="#stylepost" class="table-of-contents__link toc-highlight">style.post</a></li><li><a href="#twitterprofile" class="table-of-contents__link toc-highlight">twitterProfile?</a></li><li><a href="#twitterprofileid" class="table-of-contents__link toc-highlight">twitterProfile.id</a></li><li><a href="#twitterprofileusername" class="table-of-contents__link toc-highlight">twitterProfile.username</a></li><li><a href="#twitterprofilescreenname" class="table-of-contents__link toc-highlight">twitterProfile.screenName</a></li><li><a href="#twitterprofilebio" class="table-of-contents__link toc-highlight">twitterProfile.bio</a></li><li><a href="#twitterprofilenicknames" class="table-of-contents__link toc-highlight">twitterProfile.nicknames?</a></li><li><a href="#instagramprofile" class="table-of-contents__link toc-highlight">instagramProfile?</a></li><li><a href="#instagramprofileid" class="table-of-contents__link toc-highlight">instagramProfile.id</a></li><li><a href="#instagramprofileusername" class="table-of-contents__link toc-highlight">instagramProfile.username</a></li><li><a href="#instagramprofilebio" class="table-of-contents__link toc-highlight">instagramProfile.bio</a></li><li><a href="#instagramprofilenicknames" class="table-of-contents__link toc-highlight">instagramProfile.nicknames?</a></li><li><a href="#simsaiprofile" class="table-of-contents__link toc-highlight">simsaiProfile?</a></li><li><a href="#simsaiprofileid" class="table-of-contents__link toc-highlight">simsaiProfile.id</a></li><li><a href="#simsaiprofileusername" class="table-of-contents__link toc-highlight">simsaiProfile.username</a></li><li><a href="#simsaiprofilescreenname" class="table-of-contents__link toc-highlight">simsaiProfile.screenName</a></li><li><a href="#simsaiprofilebio" class="table-of-contents__link toc-highlight">simsaiProfile.bio</a></li><li><a href="#nft" class="table-of-contents__link toc-highlight">nft?</a></li><li><a href="#nftprompt" class="table-of-contents__link toc-highlight">nft.prompt</a></li><li><a href="#extends" class="table-of-contents__link toc-highlight">extends?</a></li><li><a href="#twitterspaces" class="table-of-contents__link toc-highlight">twitterSpaces?</a></li></ul></li><li><a href="#defined-in" class="table-of-contents__link toc-highlight">Defined in</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/api/namespaces/v1/type-aliases/">General</a></li><li class="footer__item"><a href="https://eliza.how/llms.txt" target="_blank" rel="noopener noreferrer" class="footer__link-item">llms.txt<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_awgD"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://eliza.how/llms-full.txt" target="_blank" rel="noopener noreferrer" class="footer__link-item">llms-full.txt<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_awgD"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://www.elizaos.ai/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Website<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_awgD"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://discord.gg/elizaos" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_awgD"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li><li class="footer__item"><a href="https://twitter.com/elizaos" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twitter<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_awgD"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div><div class="col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/blog">Blog</a></li><li class="footer__item"><a class="footer__link-item" href="/news/rss.xml">RSS</a></li><li class="footer__item"><a href="https://github.com/elizaos/eliza" target="_blank" rel="noopener noreferrer" class="footer__link-item">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_awgD"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></li></ul></div></div></div></footer></div>
+</body>
+</html>
