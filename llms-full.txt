@@ -1227,8 +1227,8 @@ export type Media = {
 };
 export enum ChannelType {
   SELF = 'SELF',
-  DM = 'dm',
-  GROUP = 'group',
+  DM = 'DM',
+  GROUP = 'GROUP',
   VOICE_DM = 'VOICE_DM',
   VOICE_GROUP = 'VOICE_GROUP',
   FEED = 'FEED',
@@ -10236,7 +10236,7 @@ const startAgents = async (options: {
     "lerna": "8.1.4",
     "lint-staged": "^15.5.0",
     "sharp": "0.33.5",
-    "tsup": "8.4.0",
+    "tsup": "8.5.0",
     "turbo": "^2.4.4",
     "typedoc": "0.27.9",
     "typescript": "5.8.2",
